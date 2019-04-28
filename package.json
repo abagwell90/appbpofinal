@@ -13,9 +13,7 @@
     "reactstrap": "^8.0.0",
     "redux": "3.7.2",
     "redux-form": "7.0.4",
-    "redux-form-website-template": "0.0.41"
-  },
-  "devDependencies": {
+    "redux-form-website-template": "0.0.41",
     "react-scripts": "1.0.0"
   },
   "scripts": {
