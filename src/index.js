@@ -6,10 +6,11 @@ import store from "./store";
 import WizardForm from "./WizardForm";
 import './App.css';
 
+const apiUrl = process.env.API_URL || 'http://localhost:4000';
 
 const rootEl = document.getElementById("root");
 const handleSubmit = (values) => {
-  fetch('http://localhost:4000', { headers: {'Content-Type': 'application/json'}, method: 'POST', body: JSON.stringify(values) });
+  fetch(apiUrl, { headers: {'Content-Type': 'application/json'}, method: 'POST', body: JSON.stringify(values) });
 };
 
 ReactDOM.render(
